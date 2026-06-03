@@ -284,6 +284,10 @@ app.post("/login", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("Zerodha Backend Running");
+});
+
 app.listen(PORT, () => {
   console.log("App started!");
   mongoose.connect(uri);
