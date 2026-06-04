@@ -41,7 +41,7 @@ function ProductsPage() {
         googlePlay=""
         appStore=""
       />
-      <RightSection imageURL="./media/kiteConnect.png"
+      <RightSection imageURL="./media/kiteconnect.png"
         productName="Kite Connect API"
         productDescription="Build powerful trading platforms and experiences
          with our super simple HTTP/JSON APIs. If you are a startup, build 
