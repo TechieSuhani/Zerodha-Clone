@@ -28,7 +28,7 @@ function Login() {
 
         alert("Login Successful");
 
-        window.location.href = "/";
+        window.location.href = `https://zerodha-clone-dashboard-ws5h.onrender.com?user=${email.split("@")[0]}`;
       } else {
         alert(data.message);
       }

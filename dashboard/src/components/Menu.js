@@ -24,7 +24,7 @@ const firstLetter = userName.charAt(0).toUpperCase();
     localStorage.removeItem("token");
     localStorage.removeItem("userName");
 
-    window.location.href = "https://YOUR-FRONTEND-URL.onrender.com" ;
+    window.location.href = "https://zerodha-clone-r6u9.onrender.com" ;
   };
 
   const menuClass = "menu";
