@@ -27,6 +27,7 @@ function Login() {
         localStorage.setItem("userName", email.split("@")[0]);
 
         alert("Login Successful");
+        console.log("Redirecting...");
 
         window.location.href = `https://zerodha-clone-dashboard-ws5h.onrender.com?user=${email.split("@")[0]}`;
       } else {
