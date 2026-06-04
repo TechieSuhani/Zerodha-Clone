@@ -8,7 +8,7 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3002/login", {
+      const response = await fetch("https://zerodha-clone-production-cb53.up.railway.app/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -28,7 +28,7 @@ function Login() {
 
         alert("Login Successful");
 
-        window.location.href = `http://localhost:3001?user=${email.split("@")[0]}`;
+        window.location.href = `\`;
       } else {
         alert(data.message);
       }

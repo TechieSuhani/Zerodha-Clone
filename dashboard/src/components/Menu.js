@@ -24,7 +24,7 @@ const firstLetter = userName.charAt(0).toUpperCase();
     localStorage.removeItem("token");
     localStorage.removeItem("userName");
 
-    window.location.href = "http://localhost:3000";
+    window.location.href = "https://YOUR-FRONTEND-URL.onrender.com" ;
   };
 
   const menuClass = "menu";

@@ -8,7 +8,7 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:3002/signup", {
+    const response = await fetch( "https://zerodha-clone-production-cb53.up.railway.app/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
