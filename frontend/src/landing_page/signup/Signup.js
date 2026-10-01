@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { API_BASE_URL } from "../../config";
 
 function Signup() {
   const [name, setName] = useState("");
@@ -8,23 +9,30 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
 
-    const response = await fetch( "https://zerodha-clone-production-cb53.up.railway.app/signup", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        password,
-      }),
-    });
+    try {
+      const response = await fetch(`${API_BASE_URL}/signup`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          password,
+        }),
+      });
 
-    const data = await response.json();
+      const data = await response.json();
 
-    alert(data.message);
+      alert(data.message || (response.ok ? "Signup successful" : "Signup failed"));
 
-    window.location.href = "/login";
+      if (response.ok) {
+        window.location.href = "/login";
+      }
+    } catch (error) {
+      console.error("Signup request failed:", error);
+      alert("Unable to reach the server. Check that the backend is running.");
+    }
   };
 
   return (
@@ -39,9 +47,11 @@ function Signup() {
         />
 
         <input
+          type="email"
           className="form-control mb-3"
           placeholder="Email"
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
 
         <input
@@ -49,6 +59,7 @@ function Signup() {
           className="form-control mb-3"
           placeholder="Password"
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
 
         <button className="btn btn-primary">
