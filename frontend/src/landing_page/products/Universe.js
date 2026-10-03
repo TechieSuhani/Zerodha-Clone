@@ -8,7 +8,7 @@ function Universe() {
         <p>Extend your trading and investment experience even further with our partner platforms</p>
       
 
-  <div className="col-4 p-3 mt-5">
+  <div className="col-12 col-sm-6 col-lg-4 p-3 mt-5">
     <img
       src="./media/smallcaseLogo.png"
       alt="smallcase"
@@ -21,7 +21,7 @@ function Universe() {
     </p>
   </div>
 
-  <div className="col-4 p-3 mt-5">
+  <div className="col-12 col-sm-6 col-lg-4 p-3 mt-5">
     <img
       src="./media/streak.png"
       alt="streak"
@@ -34,7 +34,7 @@ function Universe() {
     </p>
   </div>
 
-  <div className="col-4 p-3 mt-5">
+  <div className="col-12 col-sm-6 col-lg-4 p-3 mt-5">
     <img
       src="./media/zerodhaHouse.png"
       alt="zerodha"
@@ -48,7 +48,7 @@ function Universe() {
   </div>
 
 
-  <div className="col-4 p-3 mt-5">
+  <div className="col-12 col-sm-6 col-lg-4 p-3 mt-5">
     <img
       src="./media/tijori.png"
       alt="Tijori"
@@ -61,7 +61,7 @@ function Universe() {
     </p>
   </div>
 
-  <div className="col-4 p-3 mt-5">
+  <div className="col-12 col-sm-6 col-lg-4 p-3 mt-5">
     <img
       src="./media/sensibull.png"
       alt="Sensibull"
@@ -75,7 +75,7 @@ function Universe() {
     </p>
   </div>
 
-  <div className="col-4 p-3 mt-5">
+  <div className="col-12 col-sm-6 col-lg-4 p-3 mt-5">
     <img
       src="./media/ditto.png"
       alt="Ditto"
@@ -87,7 +87,7 @@ function Universe() {
       No spam and no mis-selling.
     </p>
   </div>
-      <button className="p-2 btn btn-primary fs-5 mb-5 mt-5" style={{width:"20%",margin: "0 auto"}}>Sign up for free</button>
+      <button className="p-2 btn btn-primary fs-5 mb-5 mt-5 cta-button" style={{margin: "0 auto"}}>Sign up for free</button>
     </div>
 </div>
 

@@ -80,3 +80,65 @@ code {
     margin-bottom: 15px;
     font-size: 1.1rem;
 }
+
+img {
+  max-width: 100%;
+}
+
+.cta-button {
+  width: 20%;
+}
+
+@media (max-width: 767.98px) {
+  .row > .col-4,
+  .row > .col-6,
+  .row > .col-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .nav-link {
+    margin-left: 0;
+  }
+
+  #supportWrapper {
+    margin: 0;
+    padding: 16px 24px;
+    gap: 12px;
+  }
+
+  #supportHero input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+  }
+
+  .quick-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+  }
+
+  .quick-links a {
+    margin-right: 0;
+  }
+
+  .cta-button {
+    width: min(100%, 260px) !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #supportHero .row {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  #supportHero ol {
+    padding-left: 1.25rem;
+  }
+
+  .partner-text {
+    width: 100%;
+  }
+}

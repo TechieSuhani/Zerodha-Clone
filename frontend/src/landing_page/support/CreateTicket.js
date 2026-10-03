@@ -5,7 +5,7 @@ function createTicket() {
     <div className="container">
       <div className="row p-5 mt-5 mb-5">
         <h1 className="fs-2">To create a ticket, select a relevant topic</h1>
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-12 col-sm-6 col-lg-4 p-3 p-md-5 mt-2 mb-2">
           <h4 className="">
             <i class="fa-solid fa-circle-plus"></i> Account Opening
           </h4>
@@ -45,7 +45,7 @@ function createTicket() {
           <br />
         </div>
 
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-12 col-sm-6 col-lg-4 p-3 p-md-5 mt-2 mb-2">
           <h4 className="">
             <i class="fa-solid fa-circle-user"></i> Your Zerodha Account
           </h4>
@@ -74,7 +74,7 @@ function createTicket() {
           <br />
         </div>
 
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-12 col-sm-6 col-lg-4 p-3 p-md-5 mt-2 mb-2">
           <h4 className="">
             <i class="fa-solid fa-chart-column"></i>&nbsp;Your Zerodha Account
           </h4>
@@ -116,7 +116,7 @@ function createTicket() {
           <br />
         </div>
 
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-12 col-sm-6 col-lg-4 p-3 p-md-5 mt-2 mb-2">
           <h4 className="">
             <i class="fa-solid fa-money-bill"></i> Funds
           </h4>
@@ -141,7 +141,7 @@ function createTicket() {
           <br />
         </div>
 
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-12 col-sm-6 col-lg-4 p-3 p-md-5 mt-2 mb-2">
           <h4 className="">
             <i class="fa-solid fa-c"></i> Console
           </h4>
@@ -176,7 +176,7 @@ function createTicket() {
           <br />
         </div>
 
-        <div className="col-4 p-5 mt-2 mb-2">
+        <div className="col-12 col-sm-6 col-lg-4 p-3 p-md-5 mt-2 mb-2">
           <h4 className="">
             <i class="fa-solid fa-coins"></i>&nbsp; Coin
           </h4>
